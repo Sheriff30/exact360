@@ -230,6 +230,10 @@ figure {
 
 /* features-section */
 
+.feature {
+  text-align: center;
+}
+
 .feature-icon {
   color: var(--tints);
   display: inline-block;
