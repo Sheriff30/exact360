@@ -465,10 +465,10 @@ form {
 }
 
 .grid-footer {
-  display: grid;
-  column-gap: 6.4rem;
-  row-gap: 9.6rem;
-  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 5rem;
 }
 
 .footer-col-heading {
