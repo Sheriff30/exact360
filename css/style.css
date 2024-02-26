@@ -537,7 +537,8 @@ form {
 
 .img-container img {
   display: block;
-  width: 35rem;
+  width: 40rem;
+  object-fit: contain;
 }
 
 .img-container img:nth-child(1) {
