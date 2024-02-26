@@ -150,27 +150,6 @@
 .step-img:hover {
   transform: scale(1.1);
 }
-/* section featured */
-.section-featured {
-  padding: 4.8rem 0 3.2rem 0;
-}
-.featured-heading {
-  color: #888;
-  text-align: center;
-  margin-bottom: 2.4rem;
-  font-weight: 500;
-  font-size: 1.4rem;
-  letter-spacing: 0.75px;
-}
-.logos {
-  display: flex;
-  justify-content: space-around;
-}
-.logos img {
-  height: 3.2rem;
-  opacity: 50%;
-  filter: brightness(0);
-}
 
 .recipes:link,
 .recipes:visited {
@@ -249,93 +228,6 @@ figure {
   margin-bottom: 4.8rem !important;
 }
 
-.starter,
-.complete {
-  width: 75%;
-  padding: 4.6rem;
-  border-radius: 11px;
-}
-
-.starter {
-  justify-self: end;
-  border: 2px #fdf2e9 solid;
-}
-
-.complete {
-  background-color: var(--tints);
-  position: relative;
-  overflow: hidden;
-}
-
-.complete::after {
-  content: "BEST VALUE";
-  text-transform: uppercase;
-  position: absolute;
-  font-weight: 700;
-  font-size: 1.4rem;
-  color: #fdf2e9;
-  background-color: var(--secondary);
-  padding: 0.8rem 8rem;
-  right: -18%;
-  top: 6%;
-  transform: rotate(45deg);
-}
-
-.heading-plan {
-  text-align: center;
-  margin-bottom: 4.8rem;
-}
-
-.plan-name {
-  color: var(--primary);
-  font-weight: 600;
-  font-size: 2rem;
-  margin-bottom: 3.2rem;
-}
-
-.plan-price {
-  color: #333;
-  font-weight: 700;
-  font-size: 6.2rem;
-  margin-bottom: 2.4rem;
-}
-
-.dollar {
-  font-size: 3rem;
-  font-weight: 500;
-  margin-right: 0.8rem;
-}
-
-.plan-text {
-  font-size: 1.6rem;
-  color: #6f6f6f;
-  line-height: 1.2;
-}
-
-.plan-features {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
-  margin-bottom: 4.8rem;
-  line-height: 1.2;
-}
-
-.plan-features li {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  font-size: 1.8rem;
-}
-
-.sign-up {
-  text-align: center;
-}
-
-.price-features {
-  font-size: 1.6rem;
-  margin-bottom: 9.6rem;
-}
 /* features-section */
 
 .feature-icon {
@@ -490,11 +382,6 @@ form {
 .contact {
   line-height: 1.6;
 }
-.address {
-  color: var(--tints);
-  font-size: 1.6rem;
-  margin-bottom: 2.4rem;
-}
 
 .footer a:link,
 .footer a:visited {
@@ -503,30 +390,9 @@ form {
   font-size: 1.6rem;
 }
 
-.col-list {
-  display: flex;
-  flex-direction: column;
-  gap: 2.4rem;
-}
-
 .logo-footer {
   margin-bottom: 4rem;
   color: var(--tints);
-}
-
-.social-logos {
-  display: flex;
-  gap: 2.4rem;
-}
-
-.social-logos ion-icon {
-  filter: brightness(0);
-  opacity: 50%;
-}
-
-.logo-col {
-  display: flex;
-  flex-direction: column;
 }
 
 .cpr-footer {
