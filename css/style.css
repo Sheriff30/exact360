@@ -30,6 +30,9 @@
   height: 9.6rem;
 }
 
+.header-container {
+  height: 9.6rem;
+}
 .mr-b {
   margin-bottom: 9.6rem !important;
 }
@@ -117,8 +120,9 @@
 }
 
 /* How it works */
-.section-how {
-  padding: 9.6rem 0;
+.section-how,
+.features {
+  padding: 9.6rem 0 0 0;
 }
 
 .step-text-box {
@@ -144,7 +148,13 @@
 
 .step-img {
   width: 50%;
-  transition: 0.5s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  cursor: pointer;
+}
+
+.widthrem {
+  width: 50rem;
+  max-width: 100%;
 }
 
 .step-img:hover {
@@ -220,8 +230,9 @@ figure {
 }
 /* pricing */
 
-.pricing-section {
-  padding: 9.6rem 0;
+.pricing-section,
+.team {
+  padding: 9.6rem 0 0 0;
 }
 
 .pricing-content {
