@@ -4,6 +4,7 @@
   background-color: transparent;
   display: none;
 }
+
 .icon-mobile-nav {
   height: 4.8rem;
   width: 4.8rem;
@@ -144,19 +145,6 @@
 
 .step-img-box:hover {
   transform: scale(1.2);
-}
-
-.step1 {
-  background: url(/img/ex360/create.png);
-  background-size: cover;
-}
-.step2 {
-  background: url(/img/ex360/record.png);
-  background-size: cover;
-}
-.step4 {
-  background: url(/img/ex360/step4.png);
-  background-size: cover;
 }
 
 .shadow {
@@ -347,6 +335,21 @@ form {
   gap: 1.2rem;
 }
 
+.bgPrimaryInput {
+  background-color: var(--secondary) !important;
+  color: var(--tints) !important;
+}
+
+.bgPrimaryInput::placeholder {
+  color: var(--tints);
+}
+
+.bgPrimaryInput:focus,
+.bgPrimaryInput select:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem var(--tints) !important;
+}
+
 .input input {
   width: 100%;
   padding: 1.2rem;
@@ -354,7 +357,6 @@ form {
 
   color: #000;
   border: none;
-  background-color: #fdf2e9;
   border-radius: 9px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
@@ -474,6 +476,14 @@ form {
 .logo-text {
   font-size: 3.5rem;
   font-weight: bold;
+  text-decoration: none;
+  color: inherit;
+}
+.logo-text2 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--tints);
 }
 .logo-text span {
   color: var(--primary);
@@ -637,4 +647,118 @@ form {
   .card_price-value {
     font-size: 4rem;
   }
+}
+
+.contact-section {
+  padding: 4.8rem 0;
+  width: 100%;
+}
+
+.contact-logo {
+  width: 20rem;
+  margin-bottom: 10rem;
+}
+
+.contact-logo img {
+  width: 100%;
+}
+
+.contact-header {
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+
+.contact-text {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+}
+.info {
+  font-size: 1.6rem;
+}
+
+.info-icon {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.info-text {
+  line-height: 3rem;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 3rem;
+}
+
+.mailto {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.input-container {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+}
+
+.input-container .input {
+  width: 80%;
+}
+
+.form-contact {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.width80 {
+  width: 80%;
+}
+
+.checkbox-container {
+  display: grid;
+  gap: 1rem;
+  font-size: 1.8rem;
+}
+
+.checkboxs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 2px solid var(--primary);
+  border-radius: 4px;
+}
+
+input[type="checkbox"]:checked {
+  background-color: var(--primary);
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.8rem;
+}
+
+textarea {
+  padding: 1rem;
+}
+
+.widthfit {
+  width: 80% !important;
 }

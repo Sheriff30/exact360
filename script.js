@@ -9,7 +9,6 @@ let links = document.querySelectorAll("a:link");
 
 links.forEach(function (link) {
   link.addEventListener("click", function (e) {
-    e.preventDefault();
     let href = link.getAttribute("href");
     if (href === "#") {
       window.scrollTo({
@@ -18,7 +17,7 @@ links.forEach(function (link) {
       });
     } else {
       let sectionEl = document.querySelector(href);
-      sectionEl.scrollIntoView({ behavior: "smooth" });
+      sectionEl?.scrollIntoView({ behavior: "smooth" });
     }
   });
 });
