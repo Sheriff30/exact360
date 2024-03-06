@@ -138,7 +138,7 @@
 }
 
 .inset-shadow {
-  box-shadow: inset 0px 0px 100px 50px var(--primary);
+  box-shadow: inset 0px -80px 40px -9px whitesmoke;
   position: absolute;
   left: 0;
   top: 0;
@@ -262,6 +262,10 @@ figure {
 
 .feature {
   text-align: center;
+}
+
+.bg-feature {
+  background-color: whitesmoke !important;
 }
 
 .feature-icon {
@@ -552,19 +556,19 @@ form {
 }
 .card_picture-1 {
   background-image: linear-gradient(to right bottom, #2d6587, #5643fa),
-    url(../img/ex360/features1.avif);
+    url(../img/ex360/features1.jpg);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 .card_picture-2 {
   background-image: linear-gradient(to right bottom, #2d6587, #5643fa),
-    url(../img/ex360/features2.avif);
+    url(../img/ex360/features2.jpg);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 .card_picture-3 {
   background-image: linear-gradient(to right bottom, #2d6587, #5643fa),
-    url(../img/ex360/features4.avif);
+    url(../img/ex360/features4.jpg);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
