@@ -781,3 +781,9 @@ textarea {
 .widthfit {
   width: 80% !important;
 }
+
+.switzerland-icon {
+  width: 100px;
+  height: 80px;
+  object-fit: cover;
+}
