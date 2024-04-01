@@ -209,3 +209,8 @@ body {
 ul {
   list-style: none;
 }
+
+.logo-img {
+  max-width: 5rem;
+  height: 5rem;
+}

@@ -195,13 +195,13 @@
 
 /* TESTIMONIAL section */
 .testimonials-section {
-  padding: 1.2rem 0;
+  padding: 5rem 0;
   background-color: var(--tints);
 }
 .testimonial-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding: 0 0 0 9.6rem;
+  padding: 5rem 10rem;
+  grid-template-columns: repeat(1, 1fr);
   column-gap: 9.6rem;
 }
 .testimonials-content {
@@ -235,7 +235,7 @@ figure {
 }
 .feedbacks {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 6.4rem;
 }
 .feedback-text {
@@ -339,11 +339,12 @@ figure {
   background-position: center;
 }
 
-form {
+.buttons-form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 3.2rem;
   row-gap: 2.4rem;
+  margin-bottom: 1.5rem;
 }
 
 .form {
@@ -783,7 +784,318 @@ textarea {
 }
 
 .switzerland-icon {
-  width: 100px;
-  height: 80px;
-  object-fit: cover;
+  width: 150px;
+  height: 90px;
+  object-fit: contain;
+}
+
+.module-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10rem;
+  gap: 5rem;
+  padding-bottom: 1rem;
+  position: relative;
+}
+
+.module-logo {
+  width: 15.997rem;
+  height: 4.474rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .buttons {
+    display: none;
+  }
+}
+
+.header-btn {
+  border-radius: 84px;
+  width: 80%;
+  max-width: 10.68rem;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 0.96rem;
+  padding: 1rem 2rem;
+}
+
+.btn-style1 {
+  border: #cfff1f solid 1px;
+  background-color: rgba(207, 255, 31, 0.2);
+  color: #cfff1f;
+  font-weight: bold;
+}
+.btn-style2 {
+  border: #cccccc solid 1px;
+  background-color: rgba(29, 30, 32, 1);
+  color: #cccccc;
+  font-weight: bold;
+}
+
+.curriculum-page-content {
+  width: 100rem;
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  color: #8b8c8d;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.heading-primary {
+  font-size: 3rem;
+  color: var(--secondary);
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 772px) {
+  .heading-primary {
+    font-size: 4.098rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .heading-primary {
+    font-size: 3.098rem;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .heading-primary {
+    font-size: 2.098rem;
+  }
+}
+
+.heading-primary span {
+  color: #cfff1f;
+}
+.heading-secondary {
+  font-size: 1.529rem;
+  text-align: center;
+  color: rgba(139, 140, 141, 1);
+  margin-bottom: 5rem;
+}
+
+.dropdowns {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.dropdown {
+  border-bottom: 1px solid;
+}
+
+.dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 1.5rem;
+}
+
+.dropdown-header div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.title-dropdown {
+  font-size: 2rem;
+  color: var(--secondary);
+}
+
+.free-btn {
+  border: #cfff1f solid 1px;
+  background-color: rgba(207, 255, 31, 0.2);
+  color: #cfff1f;
+  border-radius: 29px;
+  font-size: 0.6rem;
+  width: auto;
+  padding: 0.2rem 0.4rem;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+.module-btn {
+  border: #cccccc solid 1px;
+  background-color: rgba(29, 30, 32, 1);
+  color: #cccccc;
+  font-weight: bold;
+  border-radius: 2.9rem;
+  font-size: 1.6rem;
+  height: 1.8rem;
+  width: 5.107rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, overflow 0.5s ease;
+}
+
+.dropdown-content::-webkit-scrollbar {
+  display: none;
+}
+
+.dropdown .active {
+  max-height: 10rem;
+  overflow: auto;
+}
+
+.dropdown-description {
+  font-size: 1.6rem;
+  color: #000;
+  padding: 0 3rem 2rem 3rem;
+}
+
+.line {
+  display: block;
+  height: 1px;
+  background-color: rgba(207, 255, 31, 0.2);
+  margin: 0rem 3rem 2rem 3rem;
+}
+
+.arrow-icon {
+  color: #cccccc;
+  font-size: 1.6rem;
+  transition: transform 0.5s ease;
+}
+
+.active-arrow {
+  transform: rotate(90deg);
+}
+
+.lectures {
+  padding: 0 3rem 1rem 3rem;
+}
+
+.lecture {
+  font-size: 1rem;
+  color: #cccccc;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lecture div:first-child {
+  display: flex;
+  gap: 1rem;
+}
+.lectures {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.menubar .menubaricon {
+  font-size: 4.5rem;
+}
+
+.menubar {
+  display: none;
+  color: #cccccc;
+}
+
+@media only screen and (max-width: 700px) {
+  .menubar {
+    display: block;
+  }
+}
+
+.dropmenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #101213bc;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 1rem;
+  backdrop-filter: blur(5px);
+  z-index: 1111111;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.activedropmenu {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media only screen and (max-width: 700px) {
+  .dropmenu {
+    display: flex;
+  }
+}
+
+.dropmenu ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  list-style: none;
+}
+.dropmenu ul li {
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+.dropmenu ul li:hover {
+  background-color: #8b8c8d;
+}
+
+.dropmenu ul li a {
+  text-decoration: none;
+  color: #cccccc;
+  font-weight: bold;
+}
+
+.curriculum-page-container {
+  padding-top: 4.8rem;
+}
+
+.about {
+  padding-left: 1.5rem;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: #fff;
+  padding: 2rem;
+  background-color: var(--secondary);
+}
+
+.heading-faq {
+  font-size: 4rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: var(--primary);
+}
+
+.faq-btn {
+  grid-column: 1 / span2;
+  justify-self: center;
+  width: 32rem;
+  text-align: center;
 }

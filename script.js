@@ -66,3 +66,95 @@ function chechflexGap() {
   if (!isSupported) document.body.classList.add("no-flexbox-gap");
 }
 chechflexGap();
+
+function getToday()
+{
+  var today = new Date();
+
+  //var day = today.getDate(); 
+  //var month = today.getMonth();
+  //var year = today.getFullYear();
+
+  //return `${day}.${month}.${year}`
+
+  return today.toLocaleDateString()
+}
+
+function getMAddress()
+{
+  var y = atob("bWFpbHRvOg==")
+  var x = atob("cGFzY2Fs");
+  var b = atob("QGthbWJlcnMuY2g=");
+
+  return y + x + b;
+}
+
+function openUrl(url)
+{
+  let a= document.createElement('a');
+  a.target= '_blank';
+  a.href= url;
+  a.click();
+}
+
+const endOfMail = "%0D%0ABitte melden Sie sich sobald wie möglich.%0D%0A%0D%0ABeste Grüsse";
+
+function openBuyRequestMessage(product)
+{
+  try {
+    document.body.style.cursor='wait';
+    var madr = getMAddress();
+    var tt = getToday();
+    location.href = `${madr}?subject=Produktanfrage - ${tt}&body=Guten Tag. %0D%0AIch bin an einem Produkt interessiert: exact360 ${product}. ${endOfMail}`;
+  }
+  catch{}
+  finally {
+    document.body.style.cursor='default'
+  }
+}
+
+function openDemoRequestMessage()
+{
+  try {
+    document.body.style.cursor='wait';
+    var madr = getMAddress();
+    var tt = getToday();
+    location.href = madr + `?subject=Anfrage für Demo - ${tt}&body=Guten Tag. %0D%0AIch bin an einer Demo interessiert. %0D%0A ${endOfMail}`;
+  }
+  catch{}
+  finally {
+    document.body.style.cursor='default'
+  }
+}
+
+function openRequestMessage()
+{
+  try {
+    //document.body.style.cursor='wait';
+    var madr = getMAddress();
+    var tt = getToday();
+    var url = madr + "?subject=Anfrage - " + tt + "&body=Guten Tag";
+    location.href ="#cta"
+    openUrl(url);
+  }
+  catch{}
+  finally {
+    //document.body.style.cursor='default'
+  }
+}
+
+function openSupportMessage()
+{
+  try {
+    document.body.style.cursor='wait';
+    var madr = getMAddress();
+    var tt = getToday();
+    var url = madr + "?subject=Support - " + tt + "&body=Guten Tag"
+    location.href ="#cta"
+    openUrl(url);
+  }
+  catch{}
+  finally {
+    document.body.style.cursor='default'
+  }
+}
